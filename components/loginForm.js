@@ -45,7 +45,7 @@ function LoginForm(props){
             const {token, login_type} = res.data["datas"];
             User.saveToken(token);
             User.saveLoginType(login_type);
-            Router.push("./index");
+            Router.push("/index");
         }else{
             showloginError(res["msg"]);
         }
