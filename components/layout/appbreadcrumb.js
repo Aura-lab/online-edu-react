@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import Link from "next/link";
-import { Breadcrumb} from "antd";
+import { Breadcrumb } from "antd";
 import LayoutService from "./layoutservice";;
 import { useRouter } from 'next/router';
  

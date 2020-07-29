@@ -15,7 +15,7 @@ import { AppMenuKeys } from "../layout/appmenuconfig";
 
 function AppMenu(){
     const [openKeys, SetOpenKeys] = useState([]);
-    const [selectKeys, SetSelectedKeys] = useState([]);
+    const [selectedKeys, SetSelectedKeys] = useState([]);
     const router = useRouter();
     const path = router.pathname;
     const {student, manager, teacher} = loginTypes;
@@ -138,7 +138,7 @@ function AppMenu(){
             owners={[manager]}
             >
                 <AppMenuItem
-                key={AppMenuKeys,settingPassword} owners={[manager]}>
+                key={AppMenuKeys.settingPassword} owners={[manager]}>
                     Password
                 </AppMenuItem>
             </AppSubmenu>      
